@@ -9,40 +9,37 @@ package projectoop;
  *
  * @author I'din na
  */
-
-public class Guntype extends Storegun  {
-  
-    private int sum=0;
-    public void Akark(int a){
-        namemenu="Akark";
-        price=1500;
+public class Ammotype extends StoreAmmun {
+     public void BB80(int a){
+        namemenu="BB80";
+        price=100;
         reduce();
     
         
     }
-     public void M4A1(int a){
+     public void AK43(int a){
             
-        namemenu="M4A1";
-        price=500;
+        namemenu="AK43";
+        price=200;
         reduce();
     }
-     public void RPG(int a){
+     public void WOR(int a){
             
-        namemenu="RPG";
-        price=2500;
+        namemenu="WOR";
+        price=300;
         reduce();
     }
    
 public  void Selectall(){
         for (int j=0;j < number ;j++ )	{
         
-            if(gun[j]==null){
+            if(Ammo[j]==null){
             }
          
-            System.out.println(gun[j]);
+            System.out.println(Ammo[j]);
                   if(amount>0){
                       
-                      System.out.println(" Amount   "+totalgun[j]);
+                      System.out.println(" Amount   "+totalAmmo[j]);
                   }else{
                 System.out.println("Emtry");
             }

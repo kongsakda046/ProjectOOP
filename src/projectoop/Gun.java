@@ -18,6 +18,8 @@ interface Gun {
   public static int totalprice  [] = new int[99];
 
   
-   public  void Calculator();
+   public static  void amount(){
+       int amount=100;
+   }
    public void buy();
 }
