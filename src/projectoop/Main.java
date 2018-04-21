@@ -34,14 +34,17 @@ public static int i,numbergun,selectmenu;
     }
     public static void runprogram(){
          if(us.equals("admin")){
+             int aq;
+             do{
              System.out.println("1: Checklistgun");
-             System.out.println("2:Checklistgun");
+             System.out.println("2:ChecklistAmmo");
                 System.out.println("3:AddAmountGun");
                 System.out.println("4:AddAmountAmmo");
                 Scanner ae=new Scanner(System.in);
          
                 System.out.println("5:log out");
-                int aq=ae.nextInt();
+                 System.out.print("Select menu ");
+                aq=ae.nextInt();
                  System.out.println("");
               switch(aq){
             case 1: g.Selectall();break;
@@ -58,9 +61,10 @@ public static int i,numbergun,selectmenu;
             System.out.println("");
             a.add(amou);
             break;
-            case 5:
-                
+            case 5:break;
               }
+              }while(aq!=5);
+              Starprogram();
          }else if(us.equals("user")){
         Scanner menu =new Scanner(System.in);
         System.out.println("1:Shop gun");
@@ -128,17 +132,17 @@ Scanner select=new Scanner(System.in);
 	selectmenu = select.nextInt();
         switch (selectmenu) {
         case 0: aw.Selectall();break; 
- 	case 1:System.out.print("Enter amount");
+ 	case 1:System.out.print("Enter amount :");
             amou=se.nextInt();
             System.out.println("");
             aw.BB80(amou);
             
             break;
-        case 2:System.out.print("Enter amount");
+        case 2:System.out.print("Enter amount :");
             amou=se.nextInt();
             System.out.println(""); 
             aw.WOR(amou);break;
-        case 3:System.out.print("Enter amount");
+        case 3:System.out.print("Enter amount :");
             amou=se.nextInt();
             System.out.println(""); 
             aw.AK43(amou);break;
@@ -164,18 +168,18 @@ Scanner select=new Scanner(System.in);
         switch (selectmenu) {
         case 0: g.Selectall();break; 
  	case 1:
-        System.out.print("Enter amount");
+        System.out.print("Enter amount :");
             amou=se.nextInt();
               System.out.println(""); 
             g.Akark(amou);break;
         case 2:
-        System.out.print("Enter amount");
+        System.out.print("Enter amount ");;
             amou=se.nextInt();
                       System.out.println(""); 
                        g.M4A1(amou);
                       break;
         case 3: 
-        System.out.print("Enter amount");
+        System.out.print("Enter amount ");;
             amou=se.nextInt();
              System.out.println(""); 
             g.RPG(amou);break;

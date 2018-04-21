@@ -25,7 +25,7 @@ public class Ammotype extends StoreAmmun {
         pricet=200;
         reduce();
     }
-     public void WOR(int a){
+     public void WOR(int a){    
              count=a;
         namemenu="WOR";
         pricet=300;

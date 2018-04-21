@@ -40,10 +40,14 @@ public  void buy(){
 }
 public  void add(int t){
     count=t;
+   gun[number] = " Emtry";
     for(int i=0;i<count;i++){
        amount++;
     }
-    totalgun[number]=amount;
+     totalgun[number]=amount;
+       totalprice[number]=0;
+      
+         number++;
 
         
         

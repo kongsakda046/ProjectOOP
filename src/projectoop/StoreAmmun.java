@@ -5,6 +5,8 @@
  */
 package projectoop;
 
+import static projectoop.Storegun.count;
+
 /**
  *
  * @author I'din na
@@ -44,11 +46,14 @@ public  void buy(){
         
 }
 public  void add(int t){ 
-    count=t;
+       count=t;
+     Ammo[number] = "Emtry ";
     for(int i=0;i<count;i++){
        amount++;
     }
-    totalAmmo[number]=amount;
+     totalAmmo[number]=amount;
+       totalpriceAmmo[number]=0;
+         number++;
         
 }
 
