@@ -10,23 +10,25 @@ package projectoop;
  * @author I'din na
  */
 public class Ammotype extends StoreAmmun {
+    
      public void BB80(int a){
+         count=a;
         namemenu="BB80";
-        price=100;
+        pricet=100;
         reduce();
     
         
     }
      public void AK43(int a){
-            
+             count=a;
         namemenu="AK43";
-        price=200;
+        pricet=200;
         reduce();
     }
      public void WOR(int a){
-            
+             count=a;
         namemenu="WOR";
-        price=300;
+        pricet=300;
         reduce();
     }
    
@@ -51,8 +53,9 @@ public  void Selectall(){
     public void reduce(){
         super.buy();
     }
-    public void Calculator(){
-        super.Calculator();
+     @Override
+    public  int  Calculator(){
+        return super.Calculator();
     }
     
 }

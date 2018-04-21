@@ -10,10 +10,11 @@ package projectoop;
  * @author I'din na
  */
 
-public class Guntype extends Storegun  {
+public class Guntype extends Storegun {
   
     private int sum=0;
     public void Akark(int a){
+        count=a;
         namemenu="Akark";
         price=1500;
         reduce();
@@ -21,13 +22,13 @@ public class Guntype extends Storegun  {
         
     }
      public void M4A1(int a){
-            
+              count=a;
         namemenu="M4A1";
         price=500;
         reduce();
     }
      public void RPG(int a){
-            
+              count=a;
         namemenu="RPG";
         price=2500;
         reduce();
@@ -54,8 +55,10 @@ public  void Selectall(){
     public void reduce(){
         super.buy();
     }
-    public void Calculator(){
-        super.Calculator();
+    @Override
+    public int Calculator(){
+     
+    return    super.Calculator();
     }
     
 }

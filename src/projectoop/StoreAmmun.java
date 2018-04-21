@@ -9,13 +9,14 @@ package projectoop;
  *
  * @author I'din na
  */
-public class StoreAmmun implements Ammunition{
+public class StoreAmmun extends abstracAmmo  implements Ammunition{
   private String namegun;
     public static int selectmenu,number;
     public static int priceAK=0;
-     public static int price=0;
+     public static int pricet=0;
      public static int sum=0;
       public static int count=0;
+      public static int reduce=1;
      public static int amount=100;
      
     public static String namemenu="";
@@ -30,30 +31,34 @@ public class StoreAmmun implements Ammunition{
 
 
 public  void buy(){ 
-    Ammo[number] = " "+namemenu +" Price "+ price+"  Bath";
+    Ammo[number] = " "+namemenu +" Price "+ pricet+"  Bath";
+    for(int i=0;i<count;i++){
        amount--;
-     totalAmmo[number]=amount-number;
-       totalpriceAmmo[number]=price;
-       sum=sum+(price);
+    }
+     totalAmmo[number]=amount;
+       totalpriceAmmo[number]=pricet;
+       sum=sum+(pricet*count);
          number++;
+        
         
         
 }
-public  void add(){ 
-    Ammo[number] = " "+namemenu +" Price "+ price+"  Bath";
+public  void add(int t){ 
+    count=t;
+    for(int i=0;i<count;i++){
        amount++;
-     totalAmmo[number]=amount+number;
-       totalpriceAmmo[number]=price;
-       sum=sum+(price);
-         number++;
-        
+    }
+    totalAmmo[number]=amount;
         
 }
 
-    public void Calculator() {
-       System.out.println("Total  "+sum);
+  public int Calculator() {
+      System.out.println(sum);
+       return sum;
        
     }
+
+   
 
     
         

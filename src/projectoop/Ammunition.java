@@ -13,4 +13,10 @@ interface  Ammunition {
  public static String Ammo[] = new String[99]; 
    public static int totalAmmo[] = new int[99];
   public static int totalpriceAmmo [] = new int[99];
+     public static  void amount(){
+       int amount=100;
+   }
+   public void buy();
+      public int Calculator();
 }
+

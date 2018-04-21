@@ -5,13 +5,11 @@
  */
 package projectoop;
 
-import static projectoop.Storegun.amount;
-
 /**
  *
  * @author I'din na
  */
-abstract class abstracGun {
-    abstract void add(int t);
+public abstract class abstracAmmo {
+     abstract void add(int t);
     abstract void buy();
 }

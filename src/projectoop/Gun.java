@@ -22,4 +22,5 @@ interface Gun {
        int amount=100;
    }
    public void buy();
+      public int Calculator();
 }

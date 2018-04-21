@@ -20,42 +20,42 @@ public class Storegun extends abstracGun  implements Gun{
       public static int count=0;
      public static int amount=100;
      
+     
     public static String namemenu="";
     public  int  ame;
-    public void shopgun ( String namegun){
-       this.namegun=namegun;
-    }
-     public String shopgun1( ){
-        return namegun;
-    }
 
 
 
 public  void buy(){ 
     gun[number] = " "+namemenu +" Price "+ price+"  Bath";
+    for(int i=0;i<count;i++){
        amount--;
-     totalgun[number]=amount-number;
+    }
+     totalgun[number]=amount;
        totalprice[number]=price;
-       sum=sum+(price);
+       sum=sum+(price*count);
          number++;
         
         
 }
-public  void add(){ 
-    gun[number] = " "+namemenu +" Price "+ price+"  Bath";
+public  void add(int t){
+    count=t;
+    for(int i=0;i<count;i++){
        amount++;
-     totalgun[number]=amount+number;
-       totalprice[number]=price;
-       sum=sum+(price);
-         number++;
+    }
+    totalgun[number]=amount;
+
         
         
 }
 
-    public void Calculator() {
-       System.out.println("Total  "+sum);
+    @Override
+    public int Calculator() {
        
+       return sum;
     }
+
+    
 
     
         
